@@ -1,4 +1,4 @@
-package com.src;
+package main.java.com.src;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,7 +28,7 @@ public class SeleniumDemo {
    }
    @BeforeTest
    public void getDriver(){
-       System.setProperty("webdriver.chrome.driver", "E:\\software\\chrome\\chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver", "D:\\software\\chrome\\chromedriver.exe");
        driver =  new ChromeDriver();
    }
    @Test
@@ -43,12 +43,11 @@ public class SeleniumDemo {
            driver.quit();
     }
 
-    /*public static void main1(String[] args) {
+    public static void main(String[] args) {
         SeleniumDemo sd = new SeleniumDemo();
-        sd.getDriver("chrome");
-       // sd.launch("https://www.facebook.com/");
-
+        sd.getDriver();
+        sd.launch();
         System.out.println(sd.driver.getTitle());
         sd.closeBrowser();
-    }*/
+    }
 }
